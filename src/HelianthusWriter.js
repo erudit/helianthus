@@ -56,7 +56,8 @@ HelianthusWriter.static.config = {
     components: {
       'paragraph': require('substance/packages/paragraph/ParagraphComponent'),
       'heading': require('substance/packages/heading/HeadingComponent'),
-      'link': require('substance/packages/link/LinkComponent')
+      'link': require('substance/packages/link/LinkComponent'),
+      'author-reference': require('./AuthorReferenceComponent')
     },
     commands: [
       require('substance/ui/UndoCommand'),

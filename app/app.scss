@@ -27,6 +27,18 @@ body {
 
 .sc-author-reference {
   background: rgba(#6AC216, 0.3);
+
+  cursor: pointer;
+  position: relative;
+
+  .se-actions {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    padding: 5px;
+    border: 1px solid $border-color;
+    background: #fff;
+  }
 }
 
 .sc-container-editor {
