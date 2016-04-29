@@ -14,7 +14,15 @@ function EditAuthorReference() {
 EditAuthorReference.Prototype = function() {
   this._selectAuthor = function() {
     var authorId = this.refs.selectAuthor.val();
+    var node = this.props.node;
     console.log('le author id', authorId);
+
+    // Update the author reference target
+    var surface = this.context.surface;
+    surface.transaction(function(tx) {
+      tx.set([node.id, 'target'], authorId);
+    });
+    console.log(node.target);
   };
 
   this.render = function($$) {
