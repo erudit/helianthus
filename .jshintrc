@@ -1,0 +1,15 @@
+{
+  "esnext": true,
+  "node": true,
+  "jquery": false,
+  "devel": true,
+  "latedef": "nofunc",
+  "undef": true,
+  "unused": true,
+  "sub": true,
+  "predef": [
+    "window",
+    "document",
+    "i18n"
+  ]
+}
