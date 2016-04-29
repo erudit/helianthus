@@ -5,7 +5,9 @@ function _loadXML(path) {
     dataType: 'text'
   })
   .done(function(data){
-    var Article = require('../src/Article');
+    var ArticleImporter = require('../src/ArticleImporter');
+    var importer = new ArticleImporter();
+    var doc = importer.importDocument(data);
     debugger;
   }.bind(this))
   .fail(function(xhr, status, err) {
