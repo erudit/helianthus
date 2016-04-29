@@ -1,4 +1,31 @@
+$fa-font-path:  "../fonts" !default;
+@import '../node_modules/font-awesome/scss/font-awesome';
+@import '../node_modules/substance/styles/base/index';
+
+// Substance modules
+@import '../node_modules/substance/styles/components/_all';
+@import '../node_modules/substance/packages/_all';
+
+/* Shared demo styles */
 
 body {
-  background: red;
+  overflow: hidden;
+}
+
+.sc-helianthus-writer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.sc-toolbar {
+  border-bottom: 1px solid $border-color;
+}
+
+
+.sc-container-editor {
+  padding: 20px;
+  overflow: auto;
 }
