@@ -22,7 +22,7 @@
     "jquery": "2.1.4",
     "lodash": "^4.11.1",
     "node-sass": "^3.6.0",
-    "substance": "substance/substance#master"
+    "substance": "substance/substance#jats-converter"
   },
   "devDependencies": {
     "font-awesome": "^4.6.1"
