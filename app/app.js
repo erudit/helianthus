@@ -1,4 +1,4 @@
-var jQuery = require('jQuery');
+var jQuery = require('jquery');
 
 function _loadXML(path) {
   jQuery.ajax(path, {
