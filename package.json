@@ -1,0 +1,29 @@
+{
+  "name": "helianthus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erudit/helianthus.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/erudit/helianthus/issues"
+  },
+  "homepage": "https://github.com/erudit/helianthus#readme",
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "express": "^4.13.4",
+    "lodash": "^4.11.1",
+    "node-sass": "^3.6.0",
+    "substance": "substance/substance#master"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.6.1"
+  }
+}
