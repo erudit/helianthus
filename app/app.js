@@ -5,6 +5,7 @@ function _loadXML(path) {
     dataType: 'text'
   })
   .done(function(data){
+    var Article = require('../src/Article');
     debugger;
   }.bind(this))
   .fail(function(xhr, status, err) {
