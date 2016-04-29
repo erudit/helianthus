@@ -11,6 +11,7 @@ var SwitchTextTypeTool = require('substance/packages/text/SwitchTextTypeTool');
 var StrongTool = require('substance/packages/strong/StrongTool');
 var EmphasisTool = require('substance/packages/emphasis/EmphasisTool');
 var LinkTool = require('substance/packages/link/LinkTool');
+var AuthorReferenceTool = require('./AuthorReferenceTool');
 
 function HelianthusWriter() {
   Controller.apply(this, arguments);
@@ -30,7 +31,8 @@ HelianthusWriter.Prototype = function() {
             $$(RedoTool).append($$(Icon, {icon: 'fa-repeat'})),
             $$(StrongTool).append($$(Icon, {icon: 'fa-bold'})),
             $$(EmphasisTool).append($$(Icon, {icon: 'fa-italic'})),
-            $$(LinkTool).append($$(Icon, {icon: 'fa-link'}))
+            $$(LinkTool).append($$(Icon, {icon: 'fa-link'})),
+            $$(AuthorReferenceTool).append($$(Icon, {icon: 'fa-user'}))
           )
         ),
         $$(ContainerEditor, {
@@ -67,7 +69,8 @@ HelianthusWriter.static.config = {
       require('substance/packages/text/SwitchTextTypeCommand'),
       require('substance/packages/strong/StrongCommand'),
       require('substance/packages/emphasis/EmphasisCommand'),
-      require('substance/packages/link/LinkCommand')
+      require('substance/packages/link/LinkCommand'),
+      require('./AuthorReferenceCommand')
     ],
     textTypes: [
       {name: 'paragraph', data: {type: 'paragraph'}},

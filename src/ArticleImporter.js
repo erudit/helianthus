@@ -11,6 +11,7 @@ var converters = [
   require('substance/packages/emphasis/EmphasisHTMLConverter'),
   require('substance/packages/strong/StrongHTMLConverter'),
   require('substance/packages/link/LinkHTMLConverter'),
+  require('./AuthorReferenceConverter')
 ];
 
 function ArticleImporter() {
